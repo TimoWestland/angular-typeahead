@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <label class="search">
+    <span class="search__label">Search</span>
+    <input type="search"
+           typeahead
+           (typeaheadSelected)="handleSelectSuggestion($event)"
+           class="search__input"
+           id="autocomplete-search">
+  </label>
+</div>

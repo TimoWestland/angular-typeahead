@@ -1,0 +1,31 @@
+.search-suggestions {
+  display: block;
+  position: absolute;
+  /*bottom: 0;*/
+  left: 0;
+  width: 700px;
+  background: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.search-suggestions__backdrop {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.search-suggestions__item {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 5px 15px;
+}
+
+.search-suggestions__item:hover,
+.search-suggestions__item:focus {
+  background: #ccc;
+}

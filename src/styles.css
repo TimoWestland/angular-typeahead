@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css');
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

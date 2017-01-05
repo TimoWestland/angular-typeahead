@@ -1,0 +1,15 @@
+<template #suggestionsTplRef>
+  <section class="search-suggestions" *ngIf="showSuggestions">
+    <div class="search-suggestions__backdrop" (click)="hideSuggestions()"></div>
+    <button class="search-suggestions__item" type="button"
+            *ngFor="let result of results; let i = index"
+            [class.active]="markIsActive(i, result)"
+            (click)="handleSelectSuggestion(result)">
+      <span *ngIf="!typeaheadItemTpl">{{ result }}</span>
+      <template
+        [ngTemplateOutlet]="typeaheadItemTpl"
+        [ngOutletContext]="{ $implicit: { result: result, index: i } }">
+      </template>
+    </button>
+  </section>
+</template>
